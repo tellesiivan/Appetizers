@@ -14,6 +14,7 @@
 		557D98232BBAEF69002D04D5 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D98222BBAEF69002D04D5 /* AccountView.swift */; };
 		557D98252BBAEF7B002D04D5 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D98242BBAEF7B002D04D5 /* OrderView.swift */; };
 		557D98272BBAEF9F002D04D5 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D98262BBAEF9F002D04D5 /* AppetizerListView.swift */; };
+		557D98292BBAF9EA002D04D5 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D98282BBAF9EA002D04D5 /* Appetizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		557D98222BBAEF69002D04D5 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		557D98242BBAEF7B002D04D5 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		557D98262BBAEF9F002D04D5 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
+		557D98282BBAF9EA002D04D5 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				557D98182BBAEEF7002D04D5 /* Assets.xcassets */,
 				557D981A2BBAEEF7002D04D5 /* Preview Content */,
 				557D98222BBAEF69002D04D5 /* AccountView.swift */,
+				557D98282BBAF9EA002D04D5 /* Appetizer.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557D98292BBAF9EA002D04D5 /* Appetizer.swift in Sources */,
 				557D98232BBAEF69002D04D5 /* AccountView.swift in Sources */,
 				557D98252BBAEF7B002D04D5 /* OrderView.swift in Sources */,
 				557D98172BBAEEF5002D04D5 /* AppetizerTabView.swift in Sources */,
