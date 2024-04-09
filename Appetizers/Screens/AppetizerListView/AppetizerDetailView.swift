@@ -28,39 +28,16 @@ struct AppetizerDetailView: View {
                       .multilineTextAlignment(.center)
                 }
                 HStack(spacing:40) {
-                   VStack(spacing:2){
-                      Text("Calories")
-                         .font(.caption)
-                         .fontWeight(.medium)
-                      Text(String(appetizer.calories))
-                         .font(.headline)
-                   }
-                   VStack(spacing:2){
-                      Text("Carbs")
-                         .font(.caption)
-                         .fontWeight(.medium)
-                      Text(String(appetizer.carbs))
-                         .font(.headline)
-                   }
-                   VStack(spacing:2){
-                      Text("Protein")
-                         .font(.caption)
-                         .fontWeight(.medium)
-                      Text(String(appetizer.protein))
-                         .font(.headline)
-                   }
+                   NutritionInfo(title: "Calories", value: appetizer.calories)
+                   NutritionInfo(title: "Carbs", value: appetizer.carbs)
+                   NutritionInfo(title: "Protein", value: appetizer.protein)
                 }
              }
              Spacer()
              Button{
                 print("Tabbbed")
              } label: {
-                Text("$\(appetizer.price, specifier: "%.2f") - Add to Order")
-                   .font(.title3)
-                   .frame(width: 300, height: 50)
-                   .background(Color.brandPrimary)
-                   .foregroundStyle(Color.white)
-                   .clipShape(RoundedRectangle(cornerRadius: 12))
+                APButton(title: "$\(appetizer.price, specifier: "%.2f") - Add to Order")
              }
           }
           .padding()
@@ -73,24 +50,28 @@ struct AppetizerDetailView: View {
           Button{
              isShowingDetails = false
           } label: {
-             ZStack{
-                Circle()
-                   .frame(width: 40, height: 40)
-                   .foregroundStyle(Color.white)
-                   .shadow(radius: 40)
-                   .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
-                Image(systemName: "xmark")
-                   .imageScale(.small)
-                   .frame(width: 44, height: 44)
-                   .foregroundStyle(Color.black)
-             }
-            
+             XDismissButton()
           }
-             .padding()
+            .padding()
        })
     }
 }
 
 #Preview {
    AppetizerDetailView(appetizer: Mockdata.sampleAppetizer, isShowingDetails: .constant(true))
+}
+
+struct NutritionInfo: View {
+   let title: String
+   let value: Int
+   
+   var body: some View {
+      VStack(spacing:2){
+         Text(title)
+            .font(.caption)
+            .fontWeight(.medium)
+         Text(String(value))
+            .font(.headline)
+      }
+   }
 }

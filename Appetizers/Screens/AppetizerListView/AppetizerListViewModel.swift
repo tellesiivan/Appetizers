@@ -10,6 +10,8 @@ import Foundation
 final class AppetizerListViewModel: ObservableObject {
    @Published var appetizers: [Appetizer] = [];
    @Published var alertItem: AlertItem?
+   @Published var isShowingDetails = false
+   @Published var selectedAppetizer: Appetizer?
 
    func getAppetizers() {
       NetworkManager.shared.getAppetizers {[self] result in
