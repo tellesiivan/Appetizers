@@ -17,6 +17,8 @@
 		557D98252BBAEF7B002D04D5 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D98242BBAEF7B002D04D5 /* OrderView.swift */; };
 		557D98272BBAEF9F002D04D5 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D98262BBAEF9F002D04D5 /* AppetizerListView.swift */; };
 		557D98292BBAF9EA002D04D5 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D98282BBAF9EA002D04D5 /* Appetizer.swift */; };
+		55A31D012BC81BBE00FD62D7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A31D002BC81BBE00FD62D7 /* User.swift */; };
+		55A31D042BC8274A00FD62D7 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A31D032BC8274A00FD62D7 /* EmptyState.swift */; };
 		55BCE1552BC4269500345579 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCE1542BC4269500345579 /* ColorExtension.swift */; };
 		55BCE15C2BC4290300345579 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCE15B2BC4290300345579 /* AppetizerDetailView.swift */; };
 		55C8E01C2BC57F2A008067EA /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C8E01B2BC57F2A008067EA /* AccountViewModel.swift */; };
@@ -41,6 +43,8 @@
 		557D98242BBAEF7B002D04D5 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		557D98262BBAEF9F002D04D5 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
 		557D98282BBAF9EA002D04D5 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		55A31D002BC81BBE00FD62D7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		55A31D032BC8274A00FD62D7 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		55BCE1542BC4269500345579 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		55BCE15B2BC4290300345579 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		55C8E01B2BC57F2A008067EA /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
@@ -100,6 +104,14 @@
 				557D981B2BBAEEF7002D04D5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		55A31D022BC8272C00FD62D7 /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				55A31D032BC8274A00FD62D7 /* EmptyState.swift */,
+			);
+			path = "Empty States";
 			sourceTree = "<group>";
 		};
 		55BCE14D2BC425E800345579 /* Screens */ = {
@@ -180,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				557D98282BBAF9EA002D04D5 /* Appetizer.swift */,
+				55A31D002BC81BBE00FD62D7 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +200,7 @@
 		55BCE1582BC4277600345579 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				55A31D022BC8272C00FD62D7 /* Empty States */,
 				55EB40BC2BC576D7001A654F /* Buttons */,
 				55BCE15A2BC4279C00345579 /* Image */,
 				55BCE1592BC4279500345579 /* Cells */,
@@ -296,6 +310,7 @@
 				55EB40BE2BC576EB001A654F /* APButton.swift in Sources */,
 				553EE7C62BBEEE50002D2DDD /* RemoteImage.swift in Sources */,
 				55FF760B2BBD9E1C0052D2BD /* AppetizerListViewModel.swift in Sources */,
+				55A31D042BC8274A00FD62D7 /* EmptyState.swift in Sources */,
 				557D98252BBAEF7B002D04D5 /* OrderView.swift in Sources */,
 				557D98172BBAEEF5002D04D5 /* AppetizerTabView.swift in Sources */,
 				55FF76072BBD944E0052D2BD /* NetworkManager.swift in Sources */,
@@ -307,6 +322,7 @@
 				55BCE1552BC4269500345579 /* ColorExtension.swift in Sources */,
 				55C8E01C2BC57F2A008067EA /* AccountViewModel.swift in Sources */,
 				55EB40C02BC57792001A654F /* XDismissButton.swift in Sources */,
+				55A31D012BC81BBE00FD62D7 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
