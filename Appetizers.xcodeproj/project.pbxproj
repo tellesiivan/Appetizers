@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		553EE7C42BBEDEE8002D2DDD /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553EE7C32BBEDEE8002D2DDD /* Alert.swift */; };
 		553EE7C62BBEEE50002D2DDD /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553EE7C52BBEEE50002D2DDD /* RemoteImage.swift */; };
+		555441362BC96AA400532380 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555441352BC96AA400532380 /* Order.swift */; };
 		557D98152BBAEEF5002D04D5 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D98142BBAEEF5002D04D5 /* AppetizersApp.swift */; };
 		557D98172BBAEEF5002D04D5 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D98162BBAEEF5002D04D5 /* AppetizerTabView.swift */; };
 		557D98192BBAEEF7002D04D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557D98182BBAEEF7002D04D5 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		553EE7C32BBEDEE8002D2DDD /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		553EE7C52BBEEE50002D2DDD /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		555441352BC96AA400532380 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		557D98112BBAEEF5002D04D5 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		557D98142BBAEEF5002D04D5 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		557D98162BBAEEF5002D04D5 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			children = (
 				557D98282BBAF9EA002D04D5 /* Appetizer.swift */,
 				55A31D002BC81BBE00FD62D7 /* User.swift */,
+				555441352BC96AA400532380 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				557D98232BBAEF69002D04D5 /* AccountView.swift in Sources */,
 				55EB40BE2BC576EB001A654F /* APButton.swift in Sources */,
 				553EE7C62BBEEE50002D2DDD /* RemoteImage.swift in Sources */,
+				555441362BC96AA400532380 /* Order.swift in Sources */,
 				55FF760B2BBD9E1C0052D2BD /* AppetizerListViewModel.swift in Sources */,
 				55A31D042BC8274A00FD62D7 /* EmptyState.swift in Sources */,
 				557D98252BBAEF7B002D04D5 /* OrderView.swift in Sources */,
@@ -381,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -438,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -462,8 +466,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -491,8 +494,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

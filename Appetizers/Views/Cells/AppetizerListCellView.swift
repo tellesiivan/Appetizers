@@ -21,9 +21,9 @@ struct AppetizerListCellView: View {
                 .font(.subheadline)
                 .fontWeight(.medium)
              Text("$\(appetizer.price, specifier: "%.2f")")
+                .fontWeight(.semibold)
                 .font(.footnote)
                 .foregroundStyle(Color.secondary)
-                .fontWeight(.semibold)
           }
        }
    

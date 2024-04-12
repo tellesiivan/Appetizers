@@ -8,36 +8,64 @@
 import SwiftUI
 
 struct OrderView: View {
-   @State private var orderItems = Mockdata.orderItems
+   @EnvironmentObject var order: Order
    
     var body: some View {
-       NavigationStack {
-          ZStack {
-             VStack {
-                List {
-                   ForEach(orderItems) {appetizer in
-                      AppetizerListCellView(appetizer: appetizer)
+       if #available(iOS 16.0, *) {
+          NavigationStack {
+             ZStack {
+                VStack {
+                   List {
+                      ForEach($order.orderItems) { $appetizer in
+                         AppetizerListCellView(appetizer: appetizer)
+                      }
+                      .onDelete(perform: order.deleteItem)
                    }
-                   .onDelete(perform: deleteItems)
+                   Button {
+                      print("Order")
+                   } label: {
+                      APButton(title:"Place Order")
+                   }
                 }
-                Button {
-                   print("Order")
-                } label: {
-                   APButton(title:"Place Order")
+                if order.orderItems.isEmpty {
+                   EmptyState(message: "No items in your order, \n Please add an appetizer.")
                 }
+                
              }
-             if !orderItems.isEmpty {
-                EmptyState(message: "No items in your order, \n Please add an appetizer.")
+             .onAppear {
+                print("order \(order.orderItems.count)")
              }
-             
+             .navigationTitle("Orders")
           }
-          .navigationTitle("Orders")
+       } else {
+          NavigationView {
+             ZStack {
+                VStack {
+                   List {
+                      ForEach($order.orderItems) { $appetizer in
+                         AppetizerListCellView(appetizer: appetizer)
+                      }
+                      .onDelete(perform: order.deleteItem)
+                   }
+                   Button {
+                      print("Order")
+                   } label: {
+                      APButton(title:"Place Order")
+                   }
+                }
+                if order.orderItems.isEmpty {
+                   EmptyState(message: "No items in your order, \n Please add an appetizer.")
+                }
+                
+             }
+             .onAppear {
+                print("order \(order.orderItems.count)")
+             }
+             .navigationTitle("Orders")
+          }
        }
     }
    
-   func deleteItems(at offset: IndexSet) {
-      orderItems.remove(atOffsets: offset)
-   }
 }
 
 #Preview {
